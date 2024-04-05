@@ -11,13 +11,11 @@ function generatePassword(n){
 
         if (num0_or_abc1 == 0){
             password += numsArray[Math.floor(Math.random() * numsArray.length)];
-            console.log(numsArray[Math.floor(Math.random() * numsArray.length)]);
         } else{
             password += abcArray[Math.floor(Math.random() * abcArray.length)]
-            console.log(abcArray[Math.floor(Math.random() * abcArray.length)]);
         }
     }
-    return password
+    console.log(password);
 }
 
-console.log(generatePassword(8));
+generatePassword(8)

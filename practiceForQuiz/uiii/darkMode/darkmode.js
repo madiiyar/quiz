@@ -1,0 +1,49 @@
+// function darkMode() {
+//   let element = document.body;
+//   let content = document.getElementById("DarkMode");
+//   element.className = "dark-mod";
+//   content.innerText = "Dark Mode is ON";
+// }
+// function lightMode() {
+//   let element = document.body;
+//   let content = document.getElementById("DarkMode");
+//   element.className = "light-mod";
+//   content.innerText = "Dark Mode is OFF";
+// }
+
+// function darkMode() {
+//   let back = document.body;
+//   let button = document.getElementById("DarkMode");
+//   back.className = "dark-mod";
+//   button.innerText = "Dark Mode is ON";
+// }
+
+// function lightMode() {
+//   let back = document.body;
+//   let button = document.getElementById("DarkMode");
+//   back.className = "light-mod";
+//   button.innerText = "Dark Mode is OFF";
+// }
+
+// document.querySelector(".dark").onclick = function () {
+//   document.body.classList = "dark-mod";
+//   document.getElementById("DarkMode").innerHTML = "Dark Mode is ON";
+// };
+
+// document.querySelector(".light").onclick = function () {
+//   document.body.classList = "light-mod";
+//   document.getElementById("DarkMode").innerHTML = "Dark Mode is OFF";
+// };
+
+
+let darkBtn = document.getElementById("darkButton")
+let lightBtn = document.getElementById("lightButton")
+let mode = document.getElementById("DarkMode")
+darkBtn.onclick = function () {
+  document.body.classList = "dark-mod"
+  mode.textContent = "Dark Mode is ON"
+}
+lightBtn.onclick = function () {
+  document.body.classList = "light-mod"
+  mode.textContent = "Dark Mode is OFF"
+}
